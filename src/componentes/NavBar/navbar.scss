@@ -1,0 +1,43 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    .brand{
+        display: flex;
+        align-items: center;
+        img{
+            border-radius: 30%;
+            width: 80px;
+            height: 80px;
+
+        }
+
+    }
+    .categorias{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            color: brown;
+            display: flex;
+            list-style: none;
+            padding: 0 10px;
+        }
+    }
+    .cartwidget{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        
+        .cart{
+            color: brown;
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+        p{
+            
+        }
+    }
+    
+} 
