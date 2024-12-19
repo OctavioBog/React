@@ -1,22 +1,25 @@
-import "./navbar.scss"
+import { Link } from "react-router-dom"
+import "./navbar.css"
 import CartWidget from './CartWidget'
 import React from 'react'
+import { FiBatteryCharging } from "react-icons/fi";
 
 
 const NavBar = () => {
   return (
-   <nav className="navbar">
-    <div className="brand">
-        <img src="https://img.freepik.com/fotos-premium/deliciosa-taza-cafe-al-aire-libre-vista-naturaleza-generada-ia_1012755-6.jpg" alt="" />
-
-    </div>
+    <nav className="navbar">
+    <Link to="/" className="logo">
+        <FiBatteryCharging className="icon" />
+        <p>wordl charge</p>
+    </Link>
     <ul className="categorias">
-        <li>Cafes</li>
-        <li>Infusiones</li>
-        <li>Yerbas</li>
+        <Link to="/category/cargadores" className="category">Cargadores</Link>
+        <Link to="/category/celulares" className="category">Celulares</Link>
+        <Link to="/category/auriculares" className="category">Auriculares</Link>
     </ul>
-    <CartWidget/>
-   </nav>
+    <CartWidget />
+</nav>
+
   )
 }
 
