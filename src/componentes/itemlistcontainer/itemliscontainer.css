@@ -8,7 +8,8 @@
 }
 .tarjeta-contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptable al ancho */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.15fr)); /* Adaptable al ancho */
+    justify-content: center;
     gap: 20px; /* Espaciado entre las tarjetas */
     padding: 10px; /* Espaciado interno del contenedor */
     background-color: grey;
@@ -17,7 +18,7 @@
 
 .tarjeta {
     width: 200px;
-    height: 200px;
+    height: 300px;
     background-color:rgb(61, 11, 61);
     border-radius: 10%;
     display: flex;
@@ -30,8 +31,8 @@
     overflow: hidden;
 }
 .tarjeta img {  
-        width: 100px;
-        height: 80px;
+        width: 150px;
+        height: 180px;
 }
 
 .tarjeta  p {

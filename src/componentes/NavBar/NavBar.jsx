@@ -10,7 +10,7 @@ const NavBar = () => {
     <nav className="navbar">
     <Link to="/" className="logo">
         <FiBatteryCharging className="icon" />
-        <p>wordl charge</p>
+        <p>SmartZone</p>
     </Link>
     <ul className="categorias">
         <Link to="/category/cargadores" className="category">Cargadores</Link>
