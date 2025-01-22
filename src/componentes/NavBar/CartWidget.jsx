@@ -1,11 +1,26 @@
+import { useContext } from 'react';
+import { CartContext } from '../cartcontext/CartContext';
 import React from 'react'
 import { ImCart } from "react-icons/im";
+import { Link } from 'react-router-dom';
+
+
+
+
 const CartWidget = () => {
+const {totalQuantity} = useContext (CartContext)
+
+let quantity = totalQuantity()
+
+
+
+
+
   return (
-    <div className='cartwidget'>
+    <Link to="/cart" className='cartwidget'>
       <ImCart className='cart'/>
-      <p>1</p>
-    </div>
+      <p>{quantity !== 0 && quantity }</p>
+    </Link>
   )
 }
 

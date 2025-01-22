@@ -5,7 +5,8 @@ const product = [
         price: 30,
         descripcion: "",
         image:  "/public/img/airpods1.jpg",
-        category:"auriculares"
+        category:"auriculares",
+        stock:7
     },
     {
         id:2,
@@ -13,7 +14,8 @@ const product = [
         price: 30,
         descripcion: "",
         image: "/public/img/auticularess241.jpg" ,
-        category:"auriculares"
+        category:"auriculares",
+        stock:16
     },
     {
         id:3,
@@ -21,7 +23,8 @@ const product = [
         price: 30,
         descripcion: "",
         image: "/public/img/xiaomiau1.jpg" ,
-        category:"auriculares"
+        category:"auriculares",
+        stock:14
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const product = [
         price: 30,
         descripcion: "Cargador rápido para iPhone de última generación.",
         image: "/public/img/cargador1.jpg" ,
-        category:"cargadores"
+        category:"cargadores",
+        stock:31
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ const product = [
         price: 30,
         descripcion: "Cargador rápido para iPhone de última generación.",
         image: "/public/img/cargadoriphone1.jpg",
-        category:"cargadores"
+        category:"cargadores",
+        stock:21
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ const product = [
         price: "30€",
         descripcion: "",
         image: "/public/img/s241.jpg",
-        category:"cargadores"
+        category:"cargadores",
+        stock:32
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ const product = [
         price: 30,
         descripcion: "",
         image: "/public/img/xiaomi1.jpg",
-        category:"celulares"
+        category:"celulares",
+        stock:6
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ const product = [
         price: 30,
         descripcion: "" ,
         image:"/public/img/samsung1.jpg",
-        category:"celulares"
+        category:"celulares",
+        stock:8
     },
     {
         id: 9,
@@ -69,14 +77,15 @@ const product = [
         price: 30,
         descripcion: "Cargador rápido para iPhone de última generación.",
         image: "/public/img/iphone1.jpg" ,
-        category:"celulares"
+        category:"celulares",
+        stock:2
     }
 ];
 const getProducts = () =>  {
     return new Promise ((resolve,reject) =>{
         setTimeout(() => {
             resolve(product)
-        }, 2000)
+        }, 1000)
     })
 }
 
