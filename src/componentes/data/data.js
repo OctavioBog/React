@@ -3,7 +3,7 @@ const product = [
         id:1,
         name: "Airpods",
         price: 30,
-        descripcion: "",
+        descripcion: "lorem32",
         image:  "/public/img/airpods1.jpg",
         category:"auriculares",
         stock:7
