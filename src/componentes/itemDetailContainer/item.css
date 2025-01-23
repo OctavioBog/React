@@ -1,28 +1,26 @@
-.container {
+
+
+
+.itemdetail {
     display: flex;
+    flex-direction: row;
     justify-content: center; 
+    text-align: center;
     align-items: center;     
     height: 70vh;           
     margin: 0;               
 }
 
 
-.itemdetail {
-    display: flex;
-    align-items: center;     
-    gap: 20px;               
-    padding: 20px;           
-}
-
-
 .itemdetail img {
-    width: 150px; 
-    height: auto; 
+    width: 200px; 
+    height: 300px; 
+    margin-right: 50px;
 }
 
 .text-content {
-    display: flex;
-    flex-direction: column;  
+    width: 300px;
+    
 }
 
 

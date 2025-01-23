@@ -17,20 +17,19 @@ const ItemDetail = ({ product }) => {
  
 
     return (
-        <div className="container">
         <div className="itemdetail">
             <img src={product.image} alt={product.name} />
             <div className="text-content">
                 <h2>{product.name}</h2>
                 <p>{product.descripcion}</p>
                 <p>Precio: €{product.price}</p>
+                
                 {
                     showitemCount === true ? ( <ItemCount stock={product.stock} addProductInCart={addProductInCart}/>) :
                     ( <Link to="/cart"> Terminar mi compra</Link> )
                 }
             </div>
         </div>
-    </div>
     
     
     )   
