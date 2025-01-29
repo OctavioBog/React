@@ -5,6 +5,7 @@ import { useContext } from 'react'
 import { CartContext } from '../cartcontext/CartContext'
 import { Timestamp, addDoc, collection } from 'firebase/firestore'
 import db from '../../db/db.js'
+import './checkout.css';
 
 
 
@@ -49,11 +50,12 @@ const uploadOrder = async (neworder) => {
 
 
   return (
-    <div>
+    <div className='formulario'>
         {
         orderId ? (
-            <div>
-                <h2> Orden Completada! Guarde el numero de seguimiento : {orderId} </h2>
+            <div className='texto'>
+                <h2> Orden Completada! Guarde el numero de seguimiento :  </h2>
+                <h3>{orderId}</h3>
                 </div>
         ) : (
         <FormCheckout  dataform={dataform} handlechangeform={handlechangeform} handleSubmitform={handleSubmitform}/>

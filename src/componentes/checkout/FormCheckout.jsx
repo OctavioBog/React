@@ -1,4 +1,5 @@
 import React from 'react';
+import './checkout.css';
 
 const FormCheckout = ({ dataform, handlechangeform, handleSubmitform }) => {
   return (
@@ -7,7 +8,7 @@ const FormCheckout = ({ dataform, handlechangeform, handleSubmitform }) => {
         <label>Nombre Completo</label>
         <input
           type="text"
-          value={dataform.fullname} // Asegúrate de usar "fullname", no "Fullname"
+          value={dataform.fullname} 
           name="fullname"
           onChange={handlechangeform}
         />
@@ -21,7 +22,7 @@ const FormCheckout = ({ dataform, handlechangeform, handleSubmitform }) => {
         <label>Email</label>
         <input
           type="email"
-          value={dataform.email} // Asegúrate de usar "email", no "Email"
+          value={dataform.email} 
           name="email"
           onChange={handlechangeform}
         />

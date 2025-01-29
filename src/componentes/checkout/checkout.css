@@ -1,0 +1,81 @@
+.formulario {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: grey; 
+    font-family: Arial, sans-serif; 
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto h2{
+    font-size: 35px;
+}
+.texto h3 {
+    font-size: 30px;
+    color: rgb(61, 11, 61);
+    border: black solid 5px;
+    padding: 10px;
+}
+form {
+    
+    background-color: rgb(61, 11, 61);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+  }
+  
+
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: white;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+ 
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+ button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
