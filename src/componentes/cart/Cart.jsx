@@ -37,6 +37,7 @@ if(cart.length === 0){
       
       <div className='total'>
       <h3>Precio total: € {totalPrice()}</h3>
+    <Link to="/checKout">Continuar con el pago</Link>
       <button onClick={deletecart}>Vaciar carrito</button>
       </div>
       
